@@ -4,8 +4,8 @@ package com.despinosa;
 
 public class ejercicioDos {
     public static void main(String[] args) {
-         double precioProducto = getIva(80); // precio
-         long ivaProducto = ivaPrecio(21); // iva
+         double precioProducto = getPrecio(80); // precio
+         long ivaProducto = getIva(4); // iva
          double totalPrecio = precioProducto * ivaProducto / 100; // calculo de iva 16.80
          double ivaIncluido = totalPrecio + precioProducto; // iva incluido en el precio
         System.out.println("El precio del producto es: " + precioProducto);
@@ -13,14 +13,14 @@ public class ejercicioDos {
         System.out.println("El iva del " + ivaProducto + " %" + " sobre el precio es de " + precioProducto * ivaProducto / 100 + " Euros");
         System.out.println( "Suma total con Iva incluido es " + ivaIncluido);
     }
-    static double getIva(double precio) {
+    static double getPrecio(double precio) {
+
         return precio;
     }
-    static long ivaPrecio(long iva){
+    static long getIva(long iva){
+        
         return iva;
     }
 
 
 }
-
-
